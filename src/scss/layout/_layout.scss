@@ -5,8 +5,12 @@ body, html{
     overflow-x: hidden;
 }
 
-body{
+html{
     height: auto;
+}
+
+body{
+    height: 100%;
 }
 
 .container{
@@ -16,7 +20,7 @@ body{
 }
 
 .App{
-    max-width: 1300px;
+    max-width: 1260px;
     margin: 0 auto;
     width: 100vw;
     height: auto;
@@ -24,7 +28,7 @@ body{
 }
 
 main{
-    padding-top: 15rem;
+    padding-top: 18rem;
 }
 
 .mobile-logo-invisible{
@@ -35,7 +39,6 @@ main{
     body{
         height: 100vh;
         overflow-y: hidden;
-
     }
 
     main{

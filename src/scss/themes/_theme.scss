@@ -2,12 +2,11 @@
 // __________________________________________________________
 
 body{
-    background: #232F50;
-    background: -webkit-radial-gradient(top right, #26556C, #232F50);
-    background: -moz-radial-gradient(top right, #26556C, #232F50);
-    background: radial-gradient(to bottom left, #26556C, #232F50);
+    background: $blue;
+    background: radial-gradient(ellipse at top right, $blue-green, $blue);
+    background-repeat: no-repeat;
     position: relative;
-
+    
     &::after{
         background: transparent url('../../img/filters/stars.png') repeat;
         position: absolute;
@@ -21,3 +20,30 @@ body{
         right: 0;
     }
 }
+
+.body-border{
+    border: 1rem solid $blue-border;
+    pointer-events: none;
+    border-radius: 0;
+    position: fixed;
+    display: block;
+    content:"";
+    width: 100vw;
+    height: 100vh;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        box-shadow: 1rem solid $blue-border;
+        box-shadow: 0px 0px 0px 7px $blue-border;
+        border-radius: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+}
+

@@ -3,7 +3,7 @@
         @include pseudo-el();
         width: 12rem;
         height: 12rem;
-        z-index: -1;
+        z-index: -3;
 
         &__jupi{
             right: -1rem;
@@ -14,7 +14,7 @@
             width: 20rem;
             height: 20rem;
             left: -4rem;
-            bottom: 42rem;
+            bottom: 50rem;
             transform: rotate(6deg);
         }
 
@@ -110,9 +110,9 @@
         }
     
         &-spaceship{
-            width: 45%;
-            bottom: -10rem;
-            transform: translateY(0)
+            width: 40%;
+            bottom: 0;
+            transform: translateY(0);
             
         }
     }   
@@ -123,10 +123,17 @@
     .illu{
     
         &-spaceship{
-            width: 40%;
+            bottom: -12rem;
+        }
+    }   
+
+}
+
+@media screen and (min-width: $xxl-bp){
+    .illu{
+    
+        &-spaceship{
             bottom: 0;
-            transform: translateY(0)
-            
         }
     }   
 

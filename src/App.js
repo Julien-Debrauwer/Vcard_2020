@@ -11,7 +11,8 @@ export default class App extends Component {
 				<div className="container app-container">
 					<header>
 						<nav>
-							<h2 className="title title__logo"><span className="title__logo--yellowletter">J</span><span className="mobile-logo-invisible">ulien</span> <span className="title__logo--yellowletter">D</span><span className="mobile-logo-invisible">ebrauwer</span></h2>
+							<a href="/"><h2 className="title title__logo"><span className="title__logo--yellowletter">J</span><span className="mobile-logo-invisible">ulien</span> <span className="title__logo--yellowletter">D</span><span className="mobile-logo-invisible">ebrauwer</span></h2></a>
+							{/* <h2 className="title title__logo"><span className="title__logo--yellowletter">J</span><span className="mobile-logo-invisible">ulien</span> <span className="title__logo--yellowletter">D</span><span className="mobile-logo-invisible">ebrauwer</span></h2> */}
 							<ul className="menu">
 								<li className="menu--el"><a className="menu-link" href="/" target="_blank" rel="noopener noreferrer">Accueil</a></li>
 								<li className="menu--el"><a className="menu-link" href="http://juliendebrauwer.fr/projets.html" target="_blank" rel="noopener noreferrer">Projets</a></li>
@@ -57,7 +58,8 @@ export default class App extends Component {
 				<div className="illu-container illu-container__jupi"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/jupiler.svg`} alt="" /></div>
 				<div className="illu-container illu-container__moune"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/moune.svg`} alt="" /></div>
 				<div className="illu-container illu-container__satourne"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/satourne.svg`} alt="" /></div>
-					
+				<div className="body-border"></div>
+				<div className="noise"></div>
 			</div>
 		);
 	}

@@ -2,6 +2,7 @@
 // __________________________________________________________
 
 nav{
+    margin-top: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,13 +10,33 @@ nav{
 
 .menu{
     display: flex;
-
     &--el{
         padding: 1rem;
     }
     
     &-link{
         color: $white;
+        position: relative;
+        
+        &::after{
+            @include pseudo-el();
+            background-color: $green-light;
+            box-shadow: 0px 1px 13px 0px #87C4C1;
+            left: 0;
+            margin-top: .5rem;
+            height: .2rem;
+            width: 0%;
+            transition: width .4s ease,
+                        background-color .4s ease;
+        }
+
+        &:hover, &:focus, &:active{
+            color: $white;
+            
+            &::after{
+                width: calc(100%);       
+            }
+        }
         
     }
 }
@@ -27,10 +48,17 @@ nav{
     padding: 1.2rem 1.8rem;
     background-color: $green;
     margin-top: 4.8rem;
+    transition: background-color .5s ease,
+                box-shadow .5s ease;
+
+    &:hover, &:focus, &:active{
+        background-color: $green-light;
+        color: $blue;
+        box-shadow: 0px 1px 13px 0px #87C4C1;
+    }
 }
 
 .networks{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,14 +72,7 @@ nav{
             margin-right: 0;
         }
     }
-
-    &-link{
-        display: block;
-        position: relative;
-        height: 4rem;
-        width: 4rem;
-    }
-
+    
     &-img{
         position: absolute;
         fill: $yellow-gold;
@@ -60,13 +81,37 @@ nav{
         top: 0;
         left: 0;
     }
+
+    &-link{
+        display: block;
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+
+    }
+
+    &-img{
+        transition: fill .5s ease,
+                    drop-shadow .5s ease;
+
+        &:hover, &:focus, &:active{
+            fill: $green-light;
+            filter: drop-shadow(0px 0px 1px rgba(135, 196, 193, 0.5));
+        }
+    }
+
       
 }
 
 
-
-
-// responsive sur les networks
-// position: absolute;
-//     width: 90%;
-//     bottom: 3.2rem;
+@media screen and (min-width: $lg-bp){
+    .btn{
+        &:hover{
+            background-color: $green-light;
+            color: $blue;
+            box-shadow: 0px 1px 10px 0px #87C4C1;
+        }
+    }
+    
+    
+}
