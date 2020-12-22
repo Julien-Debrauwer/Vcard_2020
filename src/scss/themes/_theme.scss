@@ -1,17 +1,12 @@
 // PROJECT DEFAULT PAGE STYLE
 // __________________________________________________________
 
-body, html{
-    overflow-x: hidden;
-}
 body{
     background: #232F50;
     background: -webkit-radial-gradient(top right, #26556C, #232F50);
     background: -moz-radial-gradient(top right, #26556C, #232F50);
     background: radial-gradient(to bottom left, #26556C, #232F50);
     position: relative;
-    
-
 
     &::after{
         background: transparent url('../../img/filters/stars.png') repeat;
@@ -25,20 +20,4 @@ body{
         left: 0;
         right: 0;
     }
-}
-
-main{
-    padding-top: 15rem;
-}
-
-footer{
-    padding: 3.2rem 0;
-}
-
-.App{
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100vw;
-    height: 100%;
-    position: relative;
 }

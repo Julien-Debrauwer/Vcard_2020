@@ -30,8 +30,10 @@ nav{
 }
 
 .networks{
+    
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &-el{
         width: 4rem;
@@ -60,3 +62,11 @@ nav{
     }
       
 }
+
+
+
+
+// responsive sur les networks
+// position: absolute;
+//     width: 90%;
+//     bottom: 3.2rem;

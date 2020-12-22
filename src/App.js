@@ -8,9 +8,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<div className="container">
-
-				
+				<div className="container app-container">
 					<header>
 						<nav>
 							<h2 className="title title__logo"><span className="title__logo--yellowletter">J</span><span className="mobile-logo-invisible">ulien</span> <span className="title__logo--yellowletter">D</span><span className="mobile-logo-invisible">ebrauwer</span></h2>
@@ -28,20 +26,17 @@ export default class App extends Component {
 								<p>Je voyage au travers des ligne de code. Je suis une développeur qui développe. Je suis une développeur qui développe. Je suis une développeur qui développe. Je suis une développeur qui développe.</p>
 								<a className="btn" href="http://juliendebrauwer.fr/projets.html" target="_blank" rel="noopener noreferrer">Découvrez mes projets</a>
 							</Col>
-							<Col xs={24} lg={10}>
-								<img src="" alt=""/>
-								
-							</Col>
 						</Row>
+						<div className="illu-spaceship">
+							<img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/spaceship.svg`} alt="" />
+						</div>
 					</main>
 					<footer>
-					{/* <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg"><path width="100%" height="100%" d="M256 0C114.56 0 0 112.64 0 251.563c0 111.168 73.344 205.44 175.04 238.677 12.8 2.368 17.493-5.419 17.493-12.096 0-5.973-.213-21.803-.32-42.773-71.21 15.168-86.229-33.75-86.229-33.75-11.648-29.034-28.48-36.8-28.48-36.8-23.19-15.594 1.792-15.274 1.792-15.274 25.707 1.749 39.211 25.92 39.211 25.92 22.826 38.464 59.925 27.349 74.56 20.928 2.304-16.278 8.896-27.35 16.213-33.643-56.853-6.293-116.608-27.925-116.608-124.309 0-27.456 9.92-49.899 26.347-67.499-2.88-6.357-11.52-31.936 2.24-66.581 0 0 21.44-6.742 70.4 25.792 20.48-5.59 42.24-8.363 64-8.491 21.76.128 43.52 2.901 64 8.491 48.64-32.534 70.08-25.792 70.08-25.792 13.76 34.645 5.12 60.224 2.56 66.581 16.32 17.6 26.24 40.043 26.24 67.499 0 96.64-59.84 117.909-116.8 124.096 8.96 7.552 17.28 22.976 17.28 46.549 0 33.664-.32 60.715-.32 68.885 0 6.592 4.48 14.464 17.6 11.947C438.72 456.896 512 362.56 512 251.563 512 112.64 397.376 0 256 0z"/></svg> */}
-						<Row>
+						<Row className="footer-row">
 							<ul className="networks">
 								<li className="networks-el">
 									<a className="networks-link" href="https://www.linkedin.com/in/julien-debrauwer/" target="_blank" rel="noopener noreferrer" aria-label="Github">
 										<svg className="networks-img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></svg>
-										{/* <svg className="networks-img" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.56 0 0 112.64 0 251.563c0 111.168 73.344 205.44 175.04 238.677 12.8 2.368 17.493-5.419 17.493-12.096 0-5.973-.213-21.803-.32-42.773-71.21 15.168-86.229-33.75-86.229-33.75-11.648-29.034-28.48-36.8-28.48-36.8-23.19-15.594 1.792-15.274 1.792-15.274 25.707 1.749 39.211 25.92 39.211 25.92 22.826 38.464 59.925 27.349 74.56 20.928 2.304-16.278 8.896-27.35 16.213-33.643-56.853-6.293-116.608-27.925-116.608-124.309 0-27.456 9.92-49.899 26.347-67.499-2.88-6.357-11.52-31.936 2.24-66.581 0 0 21.44-6.742 70.4 25.792 20.48-5.59 42.24-8.363 64-8.491 21.76.128 43.52 2.901 64 8.491 48.64-32.534 70.08-25.792 70.08-25.792 13.76 34.645 5.12 60.224 2.56 66.581 16.32 17.6 26.24 40.043 26.24 67.499 0 96.64-59.84 117.909-116.8 124.096 8.96 7.552 17.28 22.976 17.28 46.549 0 33.664-.32 60.715-.32 68.885 0 6.592 4.48 14.464 17.6 11.947C438.72 456.896 512 362.56 512 251.563 512 112.64 397.376 0 256 0z"/></svg> */}
 									</a>
 								</li>
 								<li className="networks-el">
@@ -60,6 +55,7 @@ export default class App extends Component {
 					</footer>
 				</div>
 				<div className="illu-container illu-container__jupi"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/jupiler.svg`} alt="" /></div>
+				<div className="illu-container illu-container__moune"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/moune.svg`} alt="" /></div>
 				<div className="illu-container illu-container__satourne"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/satourne.svg`} alt="" /></div>
 					
 			</div>

@@ -10,12 +10,28 @@
             top: 8rem;
         }
 
-        &__satourne{
-            width: 24rem;
-            height: 24rem;
-            left: -1rem;
-            bottom: 0;
+        &__moune{
+            width: 20rem;
+            height: 20rem;
+            left: -4rem;
+            bottom: 42rem;
+            transform: rotate(6deg);
         }
+
+        &__satourne{
+            width: 10rem;
+            height: 10rem;
+            right: -4rem;
+            bottom: 4rem;
+            transform: rotate(6deg);
+        }
+    }
+
+    &-spaceship{
+        margin-top: 15rem;
+        position: relative;
+        width: 100%;
+        height: auto;
     }
     
     &-img{
@@ -23,3 +39,98 @@
         height: 100%;
     }
 }
+
+
+@media screen and (min-width: $md-bp){
+    .illu{
+        &-container{
+           
+    
+            &__jupi{
+                right: 55%;
+                top: 10rem;
+            }
+    
+            &__moune{
+                width: 20rem;
+                height: 20rem;
+                left: inherit;
+                right: -6rem;
+                top: 15rem;
+            }
+    
+            &__satourne{
+                width: 22rem;
+                height: 22rem;
+                right: inherit;
+                left: -6rem;
+                bottom: -6rem;
+                transform: rotate(-30deg);
+            }
+        }
+    
+        &-spaceship{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 42%;
+            margin: 0 5% 0 0;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%)
+        }
+    }   
+
+}
+
+
+@media screen and (min-width: $lg-bp){
+    .illu{
+        &-container{
+           
+    
+            &__jupi{
+                right: 45%;
+                top: -2rem;
+            }
+    
+            &__moune{
+                width: 30rem;
+                height: 30rem;
+                left: inherit;
+                right: -6rem;
+                top: 15rem;
+            }
+    
+            &__satourne{
+                left: 25%;
+                bottom: 2rem;
+                
+            }
+        }
+    
+        &-spaceship{
+            width: 45%;
+            bottom: -10rem;
+            transform: translateY(0)
+            
+        }
+    }   
+}
+
+
+@media screen and (min-width: $xl-bp){
+    .illu{
+    
+        &-spaceship{
+            width: 40%;
+            bottom: 0;
+            transform: translateY(0)
+            
+        }
+    }   
+
+}
+
+
+

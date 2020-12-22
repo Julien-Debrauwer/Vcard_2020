@@ -1,24 +1,59 @@
 // PROJECT LAYOUT STYLES
 // __________________________________________________________
 
+body, html{
+    overflow-x: hidden;
+}
+
+body{
+    height: auto;
+}
+
 .container{
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;
 }
 
+.App{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
 
-
-
+main{
+    padding-top: 15rem;
+}
 
 .mobile-logo-invisible{
     display: none;
 }
 
-
-
 @media screen and (min-width: $md-bp){
+    body{
+        height: 100vh;
+        overflow-y: hidden;
+
+    }
+
+    main{
+        padding-top: 0;
+    }
+
     .mobile-logo-invisible{
         display: inline-block;
+    }
+
+    .App{
+        height: 100vh;
+    }
+
+    .app-container{
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
     }
 }
