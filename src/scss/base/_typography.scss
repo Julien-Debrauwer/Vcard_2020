@@ -1,0 +1,27 @@
+// PROJECT FONTS
+// __________________________________________________________
+
+// Import fonts url here (except font face, do it in font.scss)
+// __________________________________________________________
+
+// Typographic rules here
+// __________________________________________________________
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: normal;
+	font-size: 1.8rem;
+    line-height: 1.5;
+    color: $white-dark;
+}
+
+.title {
+	font-family: 'Limelight', cursive;
+	font-size: 4.8rem;
+	color: $white;
+}
+
