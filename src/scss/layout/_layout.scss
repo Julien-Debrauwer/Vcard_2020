@@ -2,8 +2,23 @@
 // __________________________________________________________
 
 .container{
-    max-width: 1200px;
+    max-width: 1260px;
     width: 90%;
     margin: 0 auto;
 }
 
+
+
+
+
+.mobile-logo-invisible{
+    display: none;
+}
+
+
+
+@media screen and (min-width: $md-bp){
+    .mobile-logo-invisible{
+        display: inline-block;
+    }
+}

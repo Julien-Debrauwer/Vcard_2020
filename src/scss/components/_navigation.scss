@@ -1,7 +1,62 @@
 // PROJECT HEADER STYLE
 // __________________________________________________________
 
-.nav{
-    // background-color: teal;
-    padding: 2rem 0;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+
+    &--el{
+        padding: 1rem;
+    }
+    
+    &-link{
+        color: $white;
+        
+    }
+}
+
+.btn{
+    display: inline-block;
+    border-radius: .4rem;
+    color: $blue;
+    padding: 1.2rem 1.8rem;
+    background-color: $green;
+    margin-top: 4.8rem;
+}
+
+.networks{
+    display: flex;
+    align-items: center;
+
+    &-el{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 3.2rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &-link{
+        display: block;
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    &-img{
+        position: absolute;
+        fill: $yellow-gold;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+      
 }
