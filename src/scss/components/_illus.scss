@@ -1,6 +1,5 @@
 @keyframes grain {
-	0%,
-	100% {transform: translate(0, 0);}
+	0%,100% {transform: translate(0, 0);}
 	10% {transform: translate(-5%, -10%);}
 	20% {transform: translate(-12%, 5%);}
 	30% {transform: translate(7%, -12%);}
@@ -13,17 +12,17 @@
 }
 @keyframes moune {
     0%{ transform: rotate(0)}
-    100%{transform: rotate(10deg)}
+    100%{transform: rotate(14deg)}
 }
 
 @keyframes jupiler {
-    0%{ transform: rotate(0)}
+    0%{ transform: rotate(-2)}
     100%{transform: rotate(8.3deg)}
 }
 
 @keyframes satourne {
     0%{ transform: rotate(6deg)}
-    100%{transform: rotate(-3deg)}
+    100%{transform: rotate(-30deg)}
 }
 
 @keyframes spaceship {
@@ -69,7 +68,7 @@
 		&__jupi {
 			right: -1rem;
             top: 8rem;
-            animation: jupiler 4s alternate-reverse infinite;
+            animation: jupiler 6s alternate-reverse infinite;
 		}
 
 		&__moune {
@@ -86,7 +85,7 @@
 			height: 10rem;
 			right: -2rem;
 			bottom: 4rem;
-            animation: satourne 6s ease infinite;
+            animation: satourne 14s alternate-reverse infinite;
 		}
 	}
 
@@ -311,7 +310,7 @@
 
 .ray{
     opacity:.5; 
-    fill:#80bcf0;
+	fill:#80bcf0;
 
     &-hole{
         fill:#33302a;

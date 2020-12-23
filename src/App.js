@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { Row, Col } from 'antd';
-// import jupiler from './img/'
 import './App.scss';
 
 
