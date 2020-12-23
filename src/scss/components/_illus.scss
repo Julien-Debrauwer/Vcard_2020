@@ -109,11 +109,11 @@
 			height: 23vw;
 			top: 39.5%;
 			left: 54%;
-			animation: iamthealien 5s linear 1s infinite;
+			animation: 8s linear 2s infinite iamthealien;
 		}
 
 		@keyframes iamthealien {
-			0%, 100%{ 
+			0%, 15%, 100%{ 
 				background: url('../../img/pics/photo1.png') center/contain no-repeat;
 				transform: translate(-50%, calc(-50%)) scale(1) rotate(9deg);
 				opacity: 1;
