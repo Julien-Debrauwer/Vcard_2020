@@ -3,11 +3,32 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 import App from './App';
+import Projects from './components/Projects';
 import reportWebVitals from './reportWebVitals';
 
+
+import {
+	BrowserRouter,
+	Switch,
+	Route
+} from "react-router-dom"
+
+
+export const Root = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/projets" component={Projects} />
+        {/* <Route path="/company/:id" component={CompanyDetails} /> */}
+        {/* <Route component={NotFound} /> */}
+      </Switch>
+    </BrowserRouter>
+  )
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
