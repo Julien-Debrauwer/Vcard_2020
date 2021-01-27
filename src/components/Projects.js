@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import projects from '../projects'
@@ -7,7 +8,7 @@ import Project from './Project'
 // import { Row, Col } from 'antd'
 
 export default function Projects() {
-    const [projectsDisplay, setProjectsDisplay] = useState(projects);
+    // const [projectsDisplay, setProjectsDisplay] = useState(projects);
 
     const projectsList = projects.map(project => {
         return (
@@ -17,6 +18,8 @@ export default function Projects() {
             type={project.type}
             year={project.year}
             description={project.description}
+            picture={project.picture}
+            link={project.link}
           />
         );
       });
@@ -26,7 +29,9 @@ export default function Projects() {
             <div className="container app-container">
                 <Header/>
                 <main>
+                  <ul>
                     {projectsList}
+                  </ul>
                 </main>
                 <Footer/>
             </div>
