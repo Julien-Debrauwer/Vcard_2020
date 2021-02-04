@@ -1,14 +1,14 @@
 @keyframes grain {
 	0%,100% {transform: translate(0, 0);}
-	10% {transform: translate(-5%, -10%);}
-	20% {transform: translate(-12%, 5%);}
-	30% {transform: translate(7%, -12%);}
-	40% {transform: translate(-5%, 15%);}
-	50% {transform: translate(-8%, 12%);}
-	60% {transform: translate(10%, 0%);}
-	70% {transform: translate(0%, 15%);}
-	80% {transform: translate(3%, 18%);}
-	90% {transform: translate(-6%, 10%);}
+	10% {transform: translate(-12%, 8%);}
+	20% {transform: translate(-6%, -10%);}
+	30% {transform: translate(12%, 4%);}
+	40% {transform: translate(3%, 10%);}
+	50% {transform: translate(-8%, -2%);}
+	60% {transform: translate(15%, -15%);}
+	70% {transform: translate(-10%, 8%);}
+	80% {transform: translate(15%, -10%);}
+	90% {transform: translate(-10%, 12%);}
 }
 @keyframes moune {
     0%{ transform: rotate(0)}
@@ -38,7 +38,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	opacity: .2;
+	opacity: .4;
 
 	&::after {
 		background: url('../../img/filters/noise-web.webp');

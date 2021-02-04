@@ -18,7 +18,7 @@ export const Root = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={App}/>
         <Route path="/projets" component={Projects} />
         {/* <Route path="/company/:id" component={CompanyDetails} /> */}
         {/* <Route component={NotFound} /> */}

@@ -3,6 +3,7 @@ import { Row, Col } from 'antd';
 import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Background from './components/Background';
 
 
 export default function App() {
@@ -29,11 +30,11 @@ export default function App() {
 			<div className="illu-container illu-container__moune"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/moune.svg`} alt="" /></div>
 			<div className="illu-container illu-container__satourne"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/illus/satourne.svg`} alt="" /></div>
 			{/* <div className="illu-container illu-container__satourne"><img className="illu-img" src={`${process.env.PUBLIC_URL}/img/pics/photo1.png`} alt="" /></div> */}
-			<div className="body-border"></div>
-			<div className="noise"></div>
 			
+			{/* <div className="stars-bg"></div>
+			<div className="body-border"></div>
+			<div className="noise"></div> */}
+			<Background/>
 		</div>
 	);
 }
-
-// export default App;

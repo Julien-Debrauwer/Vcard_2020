@@ -17,7 +17,8 @@
 @import "scss/components/navigation",
 		"scss/components/illus",
 		"scss/components/animation",
-		"scss/components/project";
+		"scss/components/project",
+		"scss/components/carousel";
 
 
 @import "scss/layout/layout",
@@ -25,4 +26,5 @@
 		"scss/layout/footer";
 
 
-@import "scss/pages/home";
+@import "scss/pages/home-page",
+		"scss/pages/projects-page";

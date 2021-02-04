@@ -1,15 +1,20 @@
 // PROJECT HEADER STYLE
 // __________________________________________________________
 
+nav, .menu{
+    z-index: 2;
+    display: flex;
+}
+
 nav{
     margin-top: 3.2rem;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .menu{
-    display: flex;
+
     &--el{
         padding: 1rem;
     }
@@ -107,8 +112,50 @@ nav{
             filter: drop-shadow(0px 0px 1px rgba(135, 196, 193, 0.5));
         }
     }
+}
 
-      
+.carousel{
+    &-btn{
+        background-color: transparent;
+        padding: 0;
+        margin: 0 1rem;
+        height: 6rem;
+        width: 6rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        
+        &-arrow{
+            height: 100%;
+            width: 100%;
+            fill: $yellow-gold;
+            transition: fill .5s ease,
+                    drop-shadow .5s ease;
+
+            &:hover, &:focus, &:active{
+                fill: $green-light;
+                filter: drop-shadow(0px 0px 1px rgba(135, 196, 193, 0.5));
+            }
+        }
+    
+        &--left{
+            .carousel-btn-arrow{
+                margin: 0;
+                transform: rotateY(180deg)
+            }
+        }
+    
+    
+        &-container{
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
 
 
@@ -121,5 +168,14 @@ nav{
         }
     }
     
-    
+    .carousel{
+        &-btn{
+            &-container{
+                width: 42%;
+                position: relative;
+                margin-left: auto;
+                justify-content: space-around;
+            }
+        }
+    }
 }
