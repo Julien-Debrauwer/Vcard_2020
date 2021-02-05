@@ -18,10 +18,8 @@ export const Root = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App}/>
-        <Route path="/projets" component={Projects} />
-        {/* <Route path="/company/:id" component={CompanyDetails} /> */}
-        {/* <Route component={NotFound} /> */}
+        <Route exact path="/projets/vcard-2020" component={App}/>
+        <Route exact path="/projets/vcard-2020/projets" component={Projects} />
       </Switch>
     </BrowserRouter>
   )

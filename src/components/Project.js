@@ -2,7 +2,6 @@ import React from 'react'
 // import { Link } from "react-router-dom"
 import { Col, Row } from 'antd'
 
-// import photo from '../img/pics/photo1.png'
 
 export default function Project({isActive, title, type, year, description, picture, link}) {
     return (
