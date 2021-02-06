@@ -5,7 +5,7 @@ const projects = [
         type: "Data visualisation",
         year: "2019",
         description: "Pour ce projet de fin d'études, j'ai voulu créer une data visualisation qui présente différents faits de la carrière du célèbre chanteur David Bowie. J'ai réalisé toutes les étapes de ce projet, de l'idée à la réalisation.",
-        picture: "jupiler.svg",
+        picture: "bowie-planet.svg",
         link: "http://juliendebrauwer.fr/projets/tfe/"
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         type: "Borne interactive",
         year: "2019",
         description: "Ce projet est un concept de borne interactive et ludique qui tente de répondre aux questions que se pose l'enfant au quotidien. Je me suis principalement concentré sur le développement de l'inteface du mini jeu en websocket.",
-        picture: "moune.svg",
+        picture: "zamis-planet.svg",
         link: "http://juliendebrauwer.fr/projets/ilab/"
     },
     {
@@ -23,7 +23,7 @@ const projects = [
         type: "Réalité augmentée",
         year: "2018",
         description: "Phi Architects est un concept d'agence immobilière qui présente des maisons auto suffisantes pour tous types de budgets. Je me suis chargé d'intégrer la maquette de notre maison sur une carte de visite grâce à la réalité augmentée.",
-        picture: "satourne.svg",
+        picture: "phi-planet.svg",
         link: "http://juliendebrauwer.fr/projets/phi_architectes/"
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         type: "Web application",
         year: "2018",
         description: "Swash, le guitariste de l'espace, est mon projet de fin de 2ème année. C'est un storytelling mettant en scène Swash (le personnage que j'ai créé) lors de ses répétitions de guitare. Le but de cette expérience est de sensibiliser et initier l'utilisateur à la musique.",
-        picture: "jupiler.svg",
+        picture: "swash-planet.svg",
         link: "http://juliendebrauwer.fr/projets/tfa/"
     },
     {
@@ -41,7 +41,7 @@ const projects = [
         type: "Data visualisation",
         year: "2018",
         description: "Colorizon est une data visualisation qui regroupe les rues de Namur selon différents thèmes. On peut ainsi avoir des informations sur l'origine du nom des rues. Je me suis penché sur la charte graphique de l'expérience.",
-        picture: "moune.svg",
+        picture: "colorizon-planet.svg",
         link: "http://juliendebrauwer.fr/projets/data-play/"
     }
 ]
