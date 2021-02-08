@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 import {
-	BrowserRouter,
+	HashRouter,
 	Switch,
 	Route
 } from "react-router-dom"
@@ -16,12 +16,12 @@ import {
 
 export const Root = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
-        <Route exact path="/projets/vcard-2020" component={App}/>
-        <Route exact path="/projets/vcard-2020/projets" component={Projects} />
+        <Route exact path="/" component={App}/>
+        <Route exact path="/projets" component={Projects} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 ReactDOM.render(
