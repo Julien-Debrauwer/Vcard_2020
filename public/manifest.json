@@ -1,12 +1,7 @@
 {
-  "short_name": "Julien Debrauwer | Web developer",
-  "name": "Portfolio de Julien Debrauwer | Web developer",
+  "short_name": "Julien Debrauwer 💻 Développeur web full stack 🚀",
+  "name": "Julien Debrauwer 💻 Développeur web full stack 🚀",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "logo192.png",
       "type": "image/png",

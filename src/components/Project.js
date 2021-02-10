@@ -9,7 +9,7 @@ export default function Project({isActive, title, type, year, description, pictu
             <Row className="project-container">
                 <Col xs={16} sm={14} md={8} lg={8} className="project-col project-col__left">
                     <figure className="project-img-container">
-                        <img className="project-img" src={`${process.env.PUBLIC_URL}/img/illus/${picture}`} alt=""/>
+                        <img className="project-img" src={`${process.env.PUBLIC_URL}/img/illus/${picture}`} alt={`Planète illustrée représentant le projet ${title}`}/>
                     </figure>
                 </Col>
                 <Col xs={24} sm={20} md={12} lg={10} className="project-col project-col__right">

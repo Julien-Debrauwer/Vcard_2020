@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import { Link } from 'react-router-dom'
 import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -17,7 +18,7 @@ export default function App() {
 							<h1 className="title title--home">Julien Debrauwer</h1>
 							<h2 className="title title--sub">Le développeur, venu d'ailleurs.</h2>
 							<p>Je voyage à travers  la galaxie à la recherche de nouvelles technologies. Montez à bord de mon vaisseau, je vous montre ce que j'ai appris!</p>
-							<a className="btn" href="http://juliendebrauwer.fr/projets.html" target="_blank" rel="noopener noreferrer">Découvrez mes projets</a>
+							<Link className="btn" to="/projets" rel="noopener noreferrer">Découvrez mes projets</Link>
 						</Col>
 					</Row>
 					<div className="illu-spaceship">

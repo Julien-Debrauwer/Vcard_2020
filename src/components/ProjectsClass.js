@@ -7,7 +7,6 @@ export default function ProjectsClass(props) {
             document.body.classList.remove('projects-page')
         };
     });
-    
     return (
         props.children
     )

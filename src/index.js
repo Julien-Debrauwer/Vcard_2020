@@ -8,9 +8,9 @@ import reportWebVitals from './reportWebVitals';
 
 
 import {
-	HashRouter,
+  HashRouter,
 	Switch,
-	Route
+	Route,
 } from "react-router-dom"
 
 
